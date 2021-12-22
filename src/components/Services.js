@@ -19,7 +19,9 @@ const Services = () => {
               <div className="circle">
                 <img className="icon" src={autocad} alt="autocad..." />
               </div>
-              <a href="#">AutoCAD</a>
+              <a href="https://www.autodesk.com/products/autocad/overview?term=1-YEAR&tab=subscription">
+                AutoCAD
+              </a>
               <p>Info info info</p>
             </div>
           </div>

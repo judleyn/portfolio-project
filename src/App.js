@@ -1,21 +1,25 @@
 import './App.css';
 import "bootstrap/dist/css/bootstrap.min.css";
+import {BrowserRouter, Route, Routes} from 'react-router-dom'
 import Navbar from "./components/Navbar";
-import Header from "./components/Header"
 import Footer from './components/Footer';
-import Services from './components/Services';
-import AboutMe from './components/pages/AboutMePage';
+import HomePage from './pages/HomePage';
+import AboutMe from './pages/AboutMe';
+import ProjectsPage from './pages/ProjectsPage';
+import ContactPage from './pages/ContactPage';
 
 function App() {
  return (
-   <>
-   <Navbar/>
-   <Header/>
-   <AboutMe/>
-   <Services/>
-   <Footer/>
-   </>
- )
+<BrowserRouter>
+        <Navbar/>
+        <Routes>
+          <Route exact path="/" element={<HomePage/>}/>
+          <Route path="/aboutme" element={<AboutMe/>}/>
+          <Route path="/projects" element={<ProjectsPage/>}/>
+          <Route path="/contact" element={<ContactPage/>}/>
+        </Routes>
+        <Footer/>
+      </BrowserRouter> )
 }
 
 export default App;

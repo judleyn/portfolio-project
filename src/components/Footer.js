@@ -24,11 +24,11 @@ const Footer = () => {
           <div className="col-lg-2 col-md-2 col-sm-6">
             <div className="row">
               <div className="col">
-                <a className="footer-nav">Home</a>
+                <a href="/home" className="footer-nav">Home</a>
                 <br />
-                <a className="footer-nav">About me</a>
+                <a href="aboutme" className="footer-nav">About me</a>
                 <br />
-                <a className="footer-nav">Projects</a>
+                <a href="/projects" className="footer-nav">Projects</a>
                 <br />
                 <a className="footer-nav">Contacts</a>
                 </div>
