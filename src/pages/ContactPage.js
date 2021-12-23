@@ -27,24 +27,20 @@ const ContactPage = () => {
   };
 
   const sendEmail = (serviceID, templateID, variables, userID) => {
-    emailjs
-      .send(serviceID, templateID, variables, userID)
+    emailjs.send(serviceID, templateID, variables, userID)
       .then(() => {
-        setSuccessMessage(
-          "Form sent successfully! I'll contact you as soon as possible."
-        );
-      })
-      .catch((err) => console.error(`Something went wrong ${err}`));
-  };
+        setSuccessMessage("Form sent successfully! I'll contact you as soon as possible.");
+      }).catch(err => console.error(`Something went wrong ${err}`));
+  }
 
   return (
     <div id="contacts" className="contacts">
       <div className="text-center">
         <h1>contact me</h1>
         <p>
-          Please fill out the form and describe you project needs and I will
-          contact you as soon as possible.
+          Please fill out the form and describe you project needs and I will contact you as soon as possible.
         </p>
+        <span className="success-message">{successMessage}</span>
       </div>
       <div className="container">
         <form onSubmit={handleSubmit(onSubmit)}>
@@ -57,13 +53,15 @@ const ContactPage = () => {
                   className="form-control"
                   placeholder="Name"
                   name="name"
-                  {...register("message", {
-                    required: "Required",
+                  {...register("Please enter your name", {
+                    required: "Please enter a name with fewer than 20 characters",
                   })}
                 />
                 <div className="line"></div>
               </div>
-              <span className="error-message">wat moet ik hier nu zetten</span>
+              <span className="error-message">
+              wrm werkt dit niet
+              </span>
               {/* PHONE INPUT */}
               <div className="text-center">
                 <input

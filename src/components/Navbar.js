@@ -5,7 +5,7 @@ import { faBars } from "@fortawesome/free-solid-svg-icons";
 const Navbar = () => {
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-dark">
-      <div className="container">
+      <div>
         <button
           className="navbar-toggler"
           type="button"
@@ -30,10 +30,32 @@ const Navbar = () => {
                 about me
               </a>
             </li>
-            <li className="nav-item">
-              <a className="nav-link" href="projects">
-                projects
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="/projects"
+                id="navbarDropdown"
+                role="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                Projects
               </a>
+              <div
+                class="dropdown-menu dropdown-menu-dark"
+                aria-labelledby="navbarDropdown"
+              >
+                <a class="dropdown-item" href="/biobourgoyen">
+                  bio bourgoyen
+                </a>
+                <a class="dropdown-item" href="/pluswonen">
+                  pluswonen
+                </a>
+                <a class="dropdown-item" href="/dienstencentrum">
+                  dienstencentrum
+                </a>
+              </div>
             </li>
             <li className="nav-item">
               <a className="nav-link" href="contact">
