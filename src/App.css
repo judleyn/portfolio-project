@@ -20,9 +20,7 @@ body {
 
 /***************************************** NAVBAR *************************************************/
 
-nav {
-  z-index: 2;
-}
+
 
 .logo {
   height: 8rem;
@@ -141,6 +139,7 @@ nav ul li {
 }
 
 .about-heading {
+  padding-top: 5rem;
   color: var(--primary-dark);
   text-transform: uppercase;
 }
@@ -236,8 +235,9 @@ textarea.form-control {
 }
 
 .success-message {
-  font-weight: 900;
-  color: var(--primary-green);
+  font-weight: 600;
+  color: var(--primary-white);
+  background: var(--primary-green);
 }
 
 /*------------------------ MEDIA  ------------------------*/
@@ -259,20 +259,22 @@ textarea.form-control {
 .services {
   text-align: center;
   padding-bottom: 2rem;
+  padding-top: 2rem;
   background: var(--primary-white);
 }
 
-.services h1 {
-  color: var(--primary-dark);
+.myh1 {
+  text-align: left;
   text-transform: uppercase;
+  padding-bottom: 2rem;
 }
 
-.services h3 {
+.services p {
+  padding-top: 1rem;
+}
+
+.services .box:hover p {
   color: var(--primary-black);
-}
-
-.services h3:hover {
-  color: var(--primary-white);
 }
 
 .services a {
@@ -280,14 +282,15 @@ textarea.form-control {
   text-align: center;
   font-weight: 500;
   font-size: 1.6rem;
-  color: var(--primary-black);
+  color: var(--primary-dark);
 }
 
-.services .circle {
+.services .box:hover a {
+  color: var(--primary-black);
+}
+.services .logo {
   position: relative;
   margin: 0.375rem auto;
-  background: var(--primary-dark);
-  border-radius: 50%;
   width: 3.125rem;
   height: 3.125rem;
 }
@@ -295,8 +298,6 @@ textarea.form-control {
 .services .icon {
   width: 3.125rem;
   height: 3.125rem;
-  font-size: 1.4rem;
-  color: var(--primary-white);
   position: absolute;
   top: 50%;
   left: 50%;
@@ -304,21 +305,16 @@ textarea.form-control {
 }
 
 .services .box {
-  height: 16rem;
-  border-bottom: 0.3125rem solid var(--primary-dark);
+  height: 15rem;
   padding: 0.625rem;
   margin-bottom: 1.875rem;
   background: var(--primary-white);
-  transition: 0.1s ease-in-out;
-}
-
-.services .box:hover {
-  background: var(--primary-black);
   border-bottom: 0.3125rem solid var(--primary-black);
 }
 
-.services .box:hover a {
-  color: var(--primary-white);
+.services .box:hover {
+  background: var(--primary-white);
+  border-bottom: 0.3125rem solid var(--primary-black);
 }
 
 .services .box:hover .icon {
@@ -329,154 +325,100 @@ textarea.form-control {
   background: var(--primary-white);
 }
 
-.services .box:hover p {
-  color: var(--primary-white);
-}
-
 /****************************************** FOOTER COMPONENT ***************************************/
 .footer {
   position: relative;
   background: var(--primary-black);
-  color: var(--primary-dark-grey);
   padding: 3rem;
 }
 
 .footer a {
   text-decoration: none;
-  color: var(--primary-dark-grey);
+  color: var(--primary-grey);
 }
 
 .footer a:hover {
   text-decoration: none;
   color: var(--primary-white);
-  cursor: pointer;
 }
 
 .footer p {
   margin-bottom: 0;
 }
 
-/******************************************* PROJECTS ********************************************/
-
-/*.portfolio-wrapper {
-  background: var(--primary-light-grey);
-  padding: 3rem 0;
-}
-
-.portfolio-wrapper h1 {
-  color: var(--primary-dark);
-}
-*/
-.portfolio-image {
-  width: 15rem;
-  border: 1px solid var(--primary-orange);
-  padding: 0 0.5rem;
-}
-
-.portfolio-image-box {
-  position: relative;
-  margin: 1rem;
-}
-
-/*------------ OVERFLOW BOX ------------------*/
-.overflow {
-  position: absolute;
-  opacity: 0;
-  background: var(--primary-black);
-  width: 15rem;
-  height: 8rem;
-  top: 0;
-  border: 1px solid var(--primary-red);
-  cursor: pointer;
-}
-
-.portfolio-image-box:hover .overflow {
-  opacity: 60%;
-  transition: 0.3s ease-in-out;
-}
-
-.portfolio-icon {
-  position: absolute;
-  opacity: 0;
-  margin-left: -8rem;
-  margin-top: 3.6rem;
-  color: var(--primary-orange);
-  font-size: 1.5rem;
-}
-
-.portfolio-image-box:hover .portfolio-icon {
-  opacity: 70%;
-  transition: 0.3s ease-in-out;
-  cursor: pointer;
-}
-
-/*------------ OVERFLOW BOX ------------------*/
-.portfolio-image-popupbox {
-  width: 45rem;
-  padding: 0 0.5rem;
-}
-
-.hyper-link {
-  cursor: pointer;
-  color: var(--primary-orange);
-}
-
-.hyper-link:hover {
-  color: var(--primary-red);
-}
-
-/*------------ MEDIA ------------------*/
-@media (max-width: 768px) {
-  .portfolio-image-popupbox {
-    width: 100%;
-  }
-}
-
-@media (max-height: 570px) {
-  .popupbox-wrapper {
-    height: 100%;
-  }
-  .portfolio-image-popupbox {
-    width: 50%;
-  }
-}
-
-@media (max-height: 280px) {
-  .popupbox-wrapper {
-    height: 90%;
-  }
-  .portfolio-image-popupbox {
-    width: 30%;
-  }
-}
-
 /************************ PROJECTS *********************************/
 .projects {
-  /*background-image: url(testimonials-bg.jpg);*/
+  background-size: cover;
   background-color: var(--primary-white);
+  text-align: center;
+  padding-bottom: 2rem;
   padding-top: 2rem;
-  width: 100%;
+  margin-bottom: 0;
+  height: 100%;
 }
 
 .projects-content {
-  max-width: 60rem;
+  /*text-align: center;*/
+  max-width: 63.125rem;
   margin: 0 auto 2rem auto;
+  background: var(--primary-black);
 }
 
 .carousel .slide img {
-  width: 60rem !important;
+  /*border-image-width: cover; /*doet niet echt iets denk ik*/
+  /*width: cover !important; /*doet niet echt iets denk ik*/
+  max-height: 40rem !important;
 }
 
 .carousel .slide {
-  background-color: var(--primary-grey);
-  height: 50% !important;
+  /*height: 100% !important;*/
   padding-top: 0rem;
   padding-bottom: 0rem;
+  padding-right: 2rem;
+  padding-left: 2rem;
 }
 
-.control-arrow {
-  color: var(--primary-orange) !important;
-  background-color: var(--primary-dark) !important;
-  margin-top: -0rem !important;
-  font-size: 0rem !important;
+.carousel-root {
+  margin: auto !important;
+  margin-top: 3% !important;
+}
+
+/****************************************** MASTERSTUDIO D ***************************************/
+
+.test {
+  width: 20rem;
+  padding: 0rem;
+  border: 0px solid var(--primary-dark);
+}
+
+.masterstudio-heading {
+  padding-top: 4rem;
+  color: var(--primary-dark);
+  text-transform: uppercase;
+}
+
+.masterstudio-content {
+  /*text-align: center;*/
+  max-width: 30rem;
+  margin: 0 auto 2rem auto;
+  background: var(--primary-black);
+}
+
+@media (max-width: 468px) {
+  .test {
+    width: 15rem;
+  }
+}
+
+/******************************************  CARD ***************************************/
+
+.mycontainer {
+  width: 18rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.mycard {
+  /*justify-content: center;
+  align-items: center;*/
 }

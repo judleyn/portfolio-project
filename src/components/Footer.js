@@ -24,18 +24,26 @@ const Footer = () => {
           <div className="col-lg-2 col-md-2 col-sm-6">
             <div className="row">
               <div className="col">
-                <a href="/home" className="footer-nav">Home</a>
+                <a href="/" className="footer-nav">
+                  Home
+                </a>
                 <br />
-                <a href="aboutme" className="footer-nav">About me</a>
+                <a href="about" className="footer-nav">
+                  About
+                </a>
                 <br />
-                <a href="/projects" className="footer-nav">Projects</a>
+                <a href="/projects" className="footer-nav">
+                  Projects
+                </a>
                 <br />
-                <a className="footer-nav">Contacts</a>
-                </div>
+                <a href="/contact" className="footer-nav">
+                  Contact
+                </a>
+              </div>
             </div>
           </div>
           <div className="col-lg-5 col-md-5 col-sm-6 align-items-center">
-            <div className="d-flex justify-content-center">
+            <div className="d-flex justify-content-around">
               <SocialIcon url="https://www.instagram.com/juliendeleyn/" />
               <SocialIcon url="https://www.linkedin.com/in/julien-de-leyn-602002178/" />
               <SocialIcon url="https://www.facebook.com/julien.deleyn" />

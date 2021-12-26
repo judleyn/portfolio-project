@@ -19,17 +19,18 @@ const Navbar = () => {
         </button>
 
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul className="navbar-nav ml-auto">
+          <ul className="navbar-nav">
             <li className="nav-item active">
               <a className="nav-link" href="/">
                 Home <span className="sr-only"></span>
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="aboutme">
-                about me
+              <a className="nav-link" href="about">
+                about
               </a>
             </li>
+
             <li class="nav-item dropdown">
               <a
                 class="nav-link dropdown-toggle"
@@ -54,6 +55,13 @@ const Navbar = () => {
                 </a>
                 <a class="dropdown-item" href="/dienstencentrum">
                   dienstencentrum
+                </a>
+                <a class="dropdown-item" href="/masterstudio-d">
+                  masterstudio d
+                </a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="/projects">
+                  all projects
                 </a>
               </div>
             </li>
