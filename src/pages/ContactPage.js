@@ -44,7 +44,7 @@ const ContactPage = () => {
 
   return (
     <div>
-      <div id="contacts" className="contacts">
+      <div className="contacts">
         <div className="text-center">
           <h1>contact me</h1>
           <p>
@@ -72,7 +72,7 @@ const ContactPage = () => {
                   <div className="line"></div>
                 </div>
                 <span className="error-message">
-                  {errors.name && errors.name.message}
+                  {errors.name && errors.name.message} {/*werkt niet...*/}
                 </span>
                 {/* PHONE INPUT */}
                 <div className="text-center">

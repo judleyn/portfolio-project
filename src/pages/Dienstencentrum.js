@@ -3,14 +3,14 @@ import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import Footer from "../components/Footer";
 
-import slide1 from "../pictures/dienstencentrum/Dienstencentrum_Pagina_01.png";
-import slide2 from "../pictures/dienstencentrum/Dienstencentrum_Pagina_02.png";
-import slide3 from "../pictures/dienstencentrum/Dienstencentrum_Pagina_03.png";
-import slide4 from "../pictures/dienstencentrum/Dienstencentrum_Pagina_04.png";
-
 const Dienstencentrum = () => {
   return (
     <div>
+      <div className="pdf">
+        <a href="http://localhost:5000/juliendl/data/pdf/dienstencentrum.pdf">
+          Jurybundel Dienstencentrum
+        </a>
+      </div>
       <div className="projects">
         <div className="container">
           <div className="projects-content">
@@ -22,16 +22,34 @@ const Dienstencentrum = () => {
               autoPlay={false}
             >
               <>
-                <img src={slide1} alt="slide 1" />
+                <img
+                  src="http://localhost:5000/juliendl/data/images/dienst1.png"
+                  alt="slide 1"
+                />
               </>
               <>
-                <img src={slide2} alt="slide 2" />
+                <img
+                  src="http://localhost:5000/juliendl/data/images/dienst2.png"
+                  alt="slide 2"
+                />
               </>
               <>
-                <img src={slide3} alt="slide 3" />
+                <img
+                  src="http://localhost:5000/juliendl/data/images/dienst3.png"
+                  alt="slide 3"
+                />
               </>
               <>
-                <img src={slide4} alt="slide 4" />
+                <img
+                  src="http://localhost:5000/juliendl/data/images/dienst4.png"
+                  alt="slide 4"
+                />
+              </>
+              <>
+                <img
+                  src="http://localhost:5000/juliendl/data/images/dienst5.png"
+                  alt="slide 5"
+                />
               </>
             </Carousel>
           </div>

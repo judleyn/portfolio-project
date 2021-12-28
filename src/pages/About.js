@@ -2,8 +2,6 @@ import React from "react";
 import Services from "../components/Services";
 import Footer from "../components/Footer";
 
-import ik from "../pictures/ik.jpg";
-
 const About = () => {
   return (
     <div>
@@ -11,8 +9,11 @@ const About = () => {
         <div className="row">
           <div className="col-lg-6 col-xm-12">
             <div className="photo-wrap mb-5">
-              {/*margin buttom!!!! */}
-              <img className="profile-img" src={ik} alt="author..." />
+              <img
+                className="profile-img"
+                src="http://localhost:5000/juliendl/data/images/ik.png"
+                alt="foto van mezelf"
+              />
             </div>
           </div>
           <div className="col-lg-6 col-xm-12">
@@ -28,6 +29,7 @@ const About = () => {
         </div>
         <Services />
       </div>
+
       <div>
         <Footer />
       </div>

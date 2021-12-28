@@ -20,8 +20,6 @@ body {
 
 /***************************************** NAVBAR *************************************************/
 
-
-
 .logo {
   height: 8rem;
   /*margin-left: 100rem !important; werkt niet, ik wil da verplaatsen*/
@@ -70,10 +68,10 @@ nav ul li {
 
 .header-wrapper {
   position: relative;
-  background: url(background.jpg) no-repeat;
+  background: url("http://localhost:5000/juliendl/data/images/background.jpg");
   background-size: cover;
   background-position: center;
-  height: 90vh;
+  height: 45rem;
 }
 
 .main-info {
@@ -346,13 +344,16 @@ textarea.form-control {
   margin-bottom: 0;
 }
 
-/************************ PROJECTS *********************************/
+/************************************************ PROJECTS *********************************************************/
+
+.mycontainer {
+  padding-top: 6rem !important;
+  padding-bottom: 12rem !important;
+}
+
 .projects {
   background-size: cover;
-  background-color: var(--primary-white);
   text-align: center;
-  padding-bottom: 2rem;
-  padding-top: 2rem;
   margin-bottom: 0;
   height: 100%;
 }
@@ -364,14 +365,20 @@ textarea.form-control {
   background: var(--primary-black);
 }
 
+.projects-gif {
+  max-width: 63.125rem;
+  margin: 0 auto 2rem auto;
+}
+
+.projects-gif img {
+  max-height: 40rem !important;
+}
+
 .carousel .slide img {
-  /*border-image-width: cover; /*doet niet echt iets denk ik*/
-  /*width: cover !important; /*doet niet echt iets denk ik*/
   max-height: 40rem !important;
 }
 
 .carousel .slide {
-  /*height: 100% !important;*/
   padding-top: 0rem;
   padding-bottom: 0rem;
   padding-right: 2rem;
@@ -385,10 +392,8 @@ textarea.form-control {
 
 /****************************************** MASTERSTUDIO D ***************************************/
 
-.test {
-  width: 20rem;
-  padding: 0rem;
-  border: 0px solid var(--primary-dark);
+.masterstudio {
+  padding: 3rem !important;
 }
 
 .masterstudio-heading {
@@ -404,21 +409,34 @@ textarea.form-control {
   background: var(--primary-black);
 }
 
+.pdf a {
+  color: var(--primary-black);
+}
+
+.pdf a:hover {
+  color: var(--primary-dark);
+}
+
 @media (max-width: 468px) {
   .test {
     width: 15rem;
   }
 }
 
-/******************************************  CARD ***************************************/
+/******************************************  PDF  ***************************************/
 
-.mycontainer {
-  width: 18rem;
+.pdf {
   padding-top: 2rem;
-  padding-bottom: 2rem;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.7) !important;
+  font-size: 1.2rem;
+  font-weight: 500;
 }
 
-.mycard {
-  /*justify-content: center;
-  align-items: center;*/
+.pdf a {
+  color: var(--primary-black);
+}
+
+.pdf a:hover {
+  color: var(--primary-dark);
 }

@@ -5,18 +5,10 @@ import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import Footer from "../components/Footer";
 
-import slide1 from "../pictures/masterstudio d/slide 1.png";
-import slide2 from "../pictures/masterstudio d/slide 2.png";
-import slide3 from "../pictures/masterstudio d/slide 3.png";
-import slide4 from "../pictures/masterstudio d/slide 4.png";
-import slide5 from "../pictures/masterstudio d/slide 5.png";
-import slide6 from "../pictures/masterstudio d/slide 6.png";
-import slide7 from "../pictures/masterstudio d/slide 7.png";
-
 export default function MasterstudioD() {
   return (
     <div>
-      <div>
+      <div class="masterstudio">
         <Container>
           <Row>
             <Col sm={4}>
@@ -42,25 +34,46 @@ export default function MasterstudioD() {
                       autoPlay={false}
                     >
                       <>
-                        <img src={slide1} alt="slide 1" />
+                        <img
+                          src="http://localhost:5000/juliendl/data/images/master1.png"
+                          alt="slide 1"
+                        />
                       </>
                       <>
-                        <img src={slide2} alt="slide 2" />
+                        <img
+                          src="http://localhost:5000/juliendl/data/images/master2.png"
+                          alt="slide 2"
+                        />
                       </>
                       <>
-                        <img src={slide3} alt="slide 3" />
+                        <img
+                          src="http://localhost:5000/juliendl/data/images/master3.png"
+                          alt="slide 3"
+                        />
                       </>
                       <>
-                        <img src={slide4} alt="slide 4" />
+                        <img
+                          src="http://localhost:5000/juliendl/data/images/master4.png"
+                          alt="slide 4"
+                        />
                       </>
                       <>
-                        <img src={slide5} alt="slide 4" />
+                        <img
+                          src="http://localhost:5000/juliendl/data/images/master5.png"
+                          alt="slide 4"
+                        />
                       </>
                       <>
-                        <img src={slide6} alt="slide 4" />
+                        <img
+                          src="http://localhost:5000/juliendl/data/images/master6.png"
+                          alt="slide 4"
+                        />
                       </>
                       <>
-                        <img src={slide7} alt="slide 4" />
+                        <img
+                          src="http://localhost:5000/juliendl/data/images/master7.png"
+                          alt="slide 4"
+                        />
                       </>
                     </Carousel>
                   </div>
